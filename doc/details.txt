@@ -1,0 +1,33 @@
+project/
+├── cmd/
+│   ├── main.go                 # Application entry point
+├── config/
+│   ├── config.go               # Database and server configuration
+├── internal/
+│   ├── auth/
+│   │   ├── auth.go             # Authentication logic
+│   ├── handlers/
+│   │   ├── doctor_handler.go   # Handlers for doctor portal
+│   │   ├── receptionist_handler.go # Handlers for receptionist portal
+│   ├── models/
+│   │   ├── patient.go          # Patient model
+│   │   ├── user.go             # User model
+│   ├── repositories/
+│   │   ├── patient_repo.go     # Patient repository
+│   │   ├── user_repo.go        # User repository
+│   ├── services/
+│   │   ├── patient_service.go  # Patient service logic
+│   │   ├── user_service.go     # User service logic
+├── migrations/
+│   ├── 0001_create_tables.sql  # SQL migrations
+├── pkg/
+│   ├── middleware/
+│   │   ├── auth_middleware.go  # Middleware for authentication
+│   ├── utils/
+│   │   ├── response.go         # Common response utilities
+│   │   ├── validator.go        # Input validation utilities
+├── tests/
+│   ├── auth_test.go            # Unit tests for authentication
+│   ├── handlers_test.go        # Unit tests for handlers
+├── go.mod
+└── README.md
