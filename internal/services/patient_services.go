@@ -35,7 +35,7 @@ func (ps *PatientService) AddPatient(patient *models.Patient) error {
 	return nil
 }
 
-// GetAllPatients retrieves all patients from the database
+// GetAllPatients retrieves all patients from the database using service layer
 func (ps *PatientService) GetAllPatients() ([]*models.Patient, error) {
 	patients, err := ps.repo.GetAllPatients()
 	if err != nil {
